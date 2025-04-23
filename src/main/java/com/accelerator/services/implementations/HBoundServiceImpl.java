@@ -281,7 +281,7 @@ public class HBoundServiceImpl implements HBoundService {
     }
 
     private boolean isProline(List<String[]> secondAminoAcidResidue) {
-        if (secondAminoAcidResidue.get(0) != null) {
+        if (secondAminoAcidResidue.get(0) != null && secondAminoAcidResidue.get(0)[1] != null) {
             return secondAminoAcidResidue.get(0)[1].equals("P");
         }
         return false;
